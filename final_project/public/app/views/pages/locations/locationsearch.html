@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h3>Find what you need</h3>
+    <form ng-submit="search();">
+		<label>Location:</label>
+		<input class="form-control" type="text" name="location" ng-model="locationEntered">
+		<label>Radius(<5000(meters)):</label>
+		<input class="form-control" type="text" name="radius" ng-model="radiusEntered">
+		<br>
+		<label>Type of interest:</label>
+		<select ng-model="selectedName" ng-options="item for item in types" placeholder="Please select type"></select>
+		<br>
+		<br>
+		<button class="btn btn-primary" type="submit">Submit</button>
+	</form>
+	<br>
+	<div>
+		<h4>Results</h4>
+		<ul>
+        	<li ng-repeat="name in response.text" style="font-size:30px" ng-click="show(name);"><a href="#">{{name}}</a></li>
+   		</ul>
+	</div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,25 @@
+For the convinence of grading here is how my project meet all requirements xD:
+
+1. Project idea: The idea behind this project is to help users find place of interest around a certain location. It uses Fcebook Api 
+  for login, Google Geolocaiton Api for finding the langtitude and latitiude of an address, and Google Place Api for finding place
+  of intrests around given locations.
+  
+2. Application runs during in-class demo. It does!:D
+
+3.Api keys are writtien in the fig file, and all calls to the api are from back end.
+
+4.REST interface is correctly implemented in back-end routes: Front end calls back-end server (createuser.js) route which in turn calls REST interface
+  So no api keys can be found in front end.
+  
+5. Routes are in their own files(using app.use('/',route))
+
+6. Google APIs and facebook apis are called from the server (using http.get)
+
+7. Angular used for front end
+
+8. Ouath works for both locally and using facebook. the locationPlace (FindAttractions tab) and user profile page is protected only
+    when the user is logged in.
+
+9. MongoDb used for local user storage
+
+10. Code is commented.
